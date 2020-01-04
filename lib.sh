@@ -35,7 +35,7 @@ _switch_to_branch() {
 
 _add_files() {
     echo "INPUT_FILE_PATTERN: ${INPUT_FILE_PATTERN}"
-    git add "${INPUT_FILE_PATTERN}" ${INPUT_ADD_OPTIONS:+"$INPUT_ADD_OPTIONS"}
+    git add ${INPUT_FILE_PATTERN} ${INPUT_ADD_OPTIONS:+"$INPUT_ADD_OPTIONS"}
 }
 
 _local_commit() {
