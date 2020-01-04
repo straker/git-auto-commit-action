@@ -12,6 +12,11 @@ _switch_to_branch
 
 _add_files
 
-_local_commit
+if _git_is_dirty; then
 
-_push_to_github
+    _local_commit
+
+    _push_to_github
+else
+    echo "Working tree clean. Nothing to commit."
+fi
