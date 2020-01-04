@@ -5,9 +5,9 @@ LABEL "com.github.actions.description"="Automatically commits files which have b
 LABEL "com.github.actions.icon"="git-commit"
 LABEL "com.github.actions.color"="orange"
 
-LABEL "repository"="http://github.com/stefanzweifel/git-auto-commit-action"
-LABEL "homepage"="http://github.com/stefanzweifel/git-auto-commit-action"
-LABEL "maintainer"="Stefan Zweifel <hello@stefanzweifel.io>"
+LABEL "repository"="http://github.com/straker/git-auto-commit-action"
+LABEL "homepage"="http://github.com/straker/git-auto-commit-action"
+LABEL "maintainer"="Steven Lambert <steven@sklambert.com>"
 
 RUN apk add git-lfs
 
