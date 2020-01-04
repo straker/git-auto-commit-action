@@ -4,6 +4,9 @@ description: 'Automatically commits files which have been changed during the wor
 author: Stefan Zweifel <hello@stefanzweifel.io>
 
 inputs:
+  add_options:
+    description: Add options (eg. --force)
+    required: false
   commit_message:
     description: Commit message
     required: true
@@ -26,6 +29,7 @@ runs:
   using: 'docker'
   image: 'Dockerfile'
   args:
+    - ${{ inputs.add_options }}
     - ${{ inputs.commit_message }}
     - ${{ inputs.commit_options }}
     - ${{ inputs.branch }}
